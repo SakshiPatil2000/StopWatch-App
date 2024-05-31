@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/navyblue"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="STOPWATCH"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/timerText"
+            android:hint="00-00-00"
+            android:textAlignment="center"
+            android:textSize="60dp"
+
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startButton"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:text="START"
+
+            />
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:text="STOP"
+            android:layout_alignParentEnd="true"
+            android:enabled="false"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:text="RESET"
+            android:textSize="20sp"
+            android:layout_marginTop="150dp"
+            android:enabled="false"
+
+             />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
